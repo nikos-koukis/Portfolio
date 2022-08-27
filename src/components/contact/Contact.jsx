@@ -1,5 +1,6 @@
 import React from 'react'
 import './contact.css'
+
 import { MdOutlineEmail } from 'react-icons/md'
 import { RiMessengerLine } from 'react-icons/ri'
 
@@ -21,7 +22,7 @@ const Contact = () => {
             <RiMessengerLine className='contact__option-icon' />
             <h4>Messenger</h4>
             <h5>Νίκος Κουκής</h5>
-            <a href="https://m.me/id=100001238663089" target='_blank' rel="noopener noreferrer">Send a message</a>
+            <a href={process.env.REACT_APP_MESSENGER} target='_blank' rel="noopener noreferrer">Send a message</a>
           </article>
         </div>
         <form action="">
