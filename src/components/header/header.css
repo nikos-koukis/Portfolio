@@ -1,6 +1,15 @@
+.header__datetime{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px 30px;
+    color: var(--color-green);
+    font-family: var(--font-mono);
+}
+
 header {
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 12rem;
     overflow: hidden;
 }
 
@@ -10,6 +19,44 @@ header {
     position: relative;
 }
 
+.header__container>h1 {
+    color: var(--color-green);
+    font-size: 1rem;
+    font-family: var(--font-mono);
+}
+
+.header__container>h2 {
+    font-size: clamp(40px, 8vw, 80px);
+    font-weight: 600;
+    color: var(--lightest-slate);
+}
+
+.header__container>h3 {
+    font-size: clamp(20px, 8vw, 50px);
+    font-weight: 600;
+    color: var(--slate);
+}
+
+.header__container>p>a {
+    color: var(--color-green);
+}
+
+.header__container > span{
+    color: var(--color-green);
+    cursor: pointer;
+}
+
+.header__container > .read_more_text {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0ms 400ms, opacity 400ms 0ms;
+}
+
+.header__container > .read_more_text.active {
+    height: auto; opacity: 1;
+    transition: height 0ms 0ms, opacity 600ms 0ms;
+}
 /* ==================== CTA ====================*/
 
 .cta {
@@ -31,23 +78,29 @@ header {
     bottom: 3rem;
 }
 
+.header__socials {
+    z-index: 2;
+    position: fixed;
+    left: 5%;
+    bottom: 0;
+}
+
+.header__socials a {
+    font-size: 1.3rem;
+    color: var(--color-white);
+    transition: var(--transition);
+}
+
+.header__socials a:hover {
+    transform: translateY(-8px);
+    color: var(--color-green);
+}
+
 .header__socials::after {
     content: "";
     width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
-}
-
-/* ==================== ME ====================*/
-
-.me img {
-    width: 22rem;
-    height: 30rem;
-    position: absolute;
-    left: calc(50% - 11rem);
-    border-radius: 12rem 12rem 0 0;
-    overflow: hidden;
-    padding: 4rem 1.5rem 1.5rem 1.5rem;
+    height: 6rem;
+    background: var(--color-white);
 }
 
 /* ==================== SCROLL DOWN ====================*/
@@ -55,10 +108,34 @@ header {
 .scroll__down {
     position: absolute;
     right: -2.3rem;
-    bottom: 5rem;
-    transform: rotate(90deg);
+    bottom: 7rem;
     font-weight: 300;
     font-size: 0.9rem;
+    color: var(--color-white);
+    letter-spacing: 3px;
+    animation: scrollDownMove 2.5s infinite forwards;
+}
+
+@keyframes scrollDownMove {
+    0% {
+        transform: translateY(0px) rotate(90deg);
+    }
+
+    50% {
+        transform: translateY(0px) rotate(90deg);
+    }
+
+    75% {
+        transform: translateY(50px) rotate(90deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(90deg);
+    }
+}
+
+.scroll__down:hover {
+    color: var(--color-green);
 }
 
 /* ============== MEDIA QUERIES (MEDIUM DEVICES) =============*/
