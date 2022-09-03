@@ -1,65 +1,90 @@
+#experience>h1 {
+    color: var(--color-green);
+    font-size: 1rem;
+    font-family: var(--font-mono);
+    text-align: center;
+}
+
+#experience>h2 {
+    color: var(--lightest-slate);
+}
+
 .experience__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-}
-
-.experience__container > div {
-    background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-}
-
-.experience__container > div:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
-}
-
-.experience__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
-}
-
-.experience__details{
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.experience__details-icon {
-    margin-top: 6px;
-    color: var(--color-primary);
+.experience__cards {
+    display: flex;
+    flex-direction: column;
+    place-items: end;
+    gap: 40px;
+    text-align: right;
+}
+
+.experience__card .experience__card-title {
+    color: var(--color-green);
+    font-size: 2rem;
+    font-family: var(--font-mono);
+}
+
+.experience__card .experience__card-company,
+.experience__card-description,
+.experience__card-location {
+    color: var(--lightest-slate);
+    font-family: var(--font-sans);
+}
+
+.experience__container-liveText {
+    letter-spacing: 5px;
+    color: var(--color-green);
+    font-size: 2.5rem;
+    font-family: var(--font-mono);
+}
+
+.experience__card .readMoreBtn {
+    color: var(--color-green);
+    cursor: pointer;
+}
+
+.experience__card>.read_more_text {
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0ms 400ms, opacity 400ms 0ms;
+}
+
+.experience__card>.read_more_text.active {
+    height: auto;
+    opacity: 1;
+    transition: height 0ms 0ms, opacity 600ms 0ms;
 }
 
 /* ============== MEDIA QUERIES (MEDIUM DEVICES) =============*/
 
 @media screen and (max-width: 1024px) {
-    .experience__container {
-        grid-template-columns: 1fr;
+    .experience__cards {
+        place-items: center;
+        gap: 40px;
+        text-align: center;
     }
 
-    .experience__container > div {
-        width: 80%;
-        padding: 2rem;
-        margin: 0 auto;
-    }
-
-    .experience__content {
-        padding: 1rem;
+    .experience__card .experience__card-title {
+        font-size: 1.5rem;
     }
 }
 
 /* ============== MEDIA QUERIES (SMALL DEVICES) =============*/
 
 @media screen and (max-width: 600px) {
-    .experience__container {
-        gap: 1rem;
+    .experience__cards {
+        place-items: center;
+        gap: 40px;
+        text-align: center;
     }
 
-    .experience__container > div {
-        width: 100%;
-        padding: 2rem 1rem;
+    .experience__card .experience__card-title {
+        font-size: 1.5rem;
     }
 }

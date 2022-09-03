@@ -4,13 +4,24 @@
     gap: 15%
 }
 
+#about>h1 {
+    color: var(--color-green);
+    font-size: 1rem;
+    font-family: var(--font-mono);
+    text-align: center;
+}
+
+#about>h2 {
+    color: var(--lightest-slate);
+}
+
 .about__me {
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 2rem;
     background: linear-gradient(45deg,
             transparent,
-            var(--color-primary),
+            var(--color-green),
             transparent);
     display: grid;
     place-items: center;
@@ -34,33 +45,35 @@
 }
 
 .about__card {
-    background: var(--color-bg-variant);
     border: 1px solid transparent;
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
     transition: var(--transition);
+    border: 1px solid var(--color-green);
 }
 
 .about__card:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
+    background: var(--color-green-transparency);
+    border-color: var(--color-green);
     cursor: default;
+    color: var(--color-white);
 }
 
 .about__icon {
-    color: var(--color-primary);
+    color: var(--color-green);
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 
 .about__card h5 {
     font-size: 0.95rem;
+    color: var(--lightest-slate)
 }
 
 .about__card small {
     font-size: 0.7rem;
-    color: var(--color-light);
+    color: var(--slate);
 }
 
 .about__content p {
