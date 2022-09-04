@@ -7,8 +7,6 @@ import { BsLinkedin } from 'react-icons/bs'
 const Footer = () => {
   return (
     <footer>
-      <a href="" className='footer__logo'>Nick Koukis</a>
-
       <ul className='permalinks'>
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -25,7 +23,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__copyright">
-        <small>&copy; Nick Koukis - Made with &#10084; and JavaScript</small>
+        <small>&copy; {new Date().getFullYear()} - Nick Koukis - Made with <span className='footer__copyright-heart'>&#10084;</span> and JavaScript</small>
       </div>
     </footer>
   )
