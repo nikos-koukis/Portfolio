@@ -1,3 +1,14 @@
+#skills>h1 {
+    color: var(--color-green);
+    font-size: 1rem;
+    font-family: var(--font-mono);
+    text-align: center;
+}
+
+#skills>h2 {
+    color: var(--lightest-slate);
+}
+
 .skills__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -5,16 +16,18 @@
 }
 
 .skills__container > div {
-    background: var(--color-bg-variant);
+    background: transparent;
     padding: 2.4rem 5rem;
     border-radius: 2rem;
-    border: 1px solid transparent;
+    border: 1px solid var(--color-green);
 }
 
 .skills__container > div:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
+    background: var(--color-green-transparency);
+    border-color: var(--color-green);
     cursor: default;
+    color: var(--color-white);
+    transition: var(--transition);
 }
 
 .skills__content {
@@ -30,7 +43,7 @@
 
 .skills__details-icon {
     margin-top: 6px;
-    color: var(--color-primary);
+    color: var(--color-green);
 }
 
 /* ============== MEDIA QUERIES (MEDIUM DEVICES) =============*/

@@ -1,6 +1,7 @@
 import React from 'react'
 import './experience.css'
 import Typewriter from 'typewriter-effect';
+import { useState } from 'react'
 
 const jobs = [
   {
@@ -8,21 +9,24 @@ const jobs = [
     title: 'Software Engineer',
     company: 'tgndata',
     description: 'May 2022 - Present',
-    location: 'Athens, Attiki, Greece'
+    location: 'Athens, Attiki, Greece',
+    readMore: 'Read More Text 3'
   },
   {
     id: 2,
     title: 'Full Stack Developer',
     company: '3CP',
     description: 'Feb 2021 - Apr 2022',
-    location: 'Patras, Greece'
+    location: 'Patras, Greece',
+    readMore: 'Read More Text 2'
   },
   {
     id: 1,
     title: 'Junior Web Developer',
     company: 'Data City Services',
     description: 'Feb 2019 - Dec 2019',
-    location: 'Patras, Greece'
+    location: 'Patras, Greece',
+    readMore: 'Read More Text 1'
   }
 ]
 
