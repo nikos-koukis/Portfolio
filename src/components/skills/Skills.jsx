@@ -45,6 +45,11 @@ const frameworkSkills = [
     id: 2,
     title: 'Express',
     icon: <BsPatchCheckFill className="skills__details-icon" />
+  },
+  {
+    id: 3,
+    title: 'Tailwind CSS',
+    icon: <BsPatchCheckFill className="skills__details-icon" />
   }
 ];
 

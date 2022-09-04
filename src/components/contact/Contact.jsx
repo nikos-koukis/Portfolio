@@ -7,9 +7,8 @@ import { RiMessengerLine } from 'react-icons/ri'
 const Contact = () => {
   return (
     <section id='contact'>
-      <h5>Get In Touch</h5>
+      <h1>Get In Touch</h1>
       <h2>Contact Me</h2>
-
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">

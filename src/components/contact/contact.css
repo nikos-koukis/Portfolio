@@ -1,3 +1,14 @@
+#contact>h1 {
+    color: var(--color-green);
+    font-size: 1rem;
+    font-family: var(--font-mono);
+    text-align: center;
+}
+
+#contact>h2 {
+    color: var(--lightest-slate);
+}
+
 .container.contact__container {
     width: 58%;
     display: grid;
@@ -12,17 +23,19 @@
 }
 
 .contact__option {
-    background: var(--color-bg-variant);
+    background: transparent;
     padding: 1.2rem;
     border-radius: 1.2rem;
     text-align: center;
-    border: 1px solid transparent;
+    border: 1px solid var(--color-green);
     transition: var(--transition);
 }
 
 .contact__option:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
+    background: var(--color-green-transparency);
+    border-color: var(--color-green);
+    cursor: default;
+    color: var(--color-white);
 }
 
 .contact__option-icon {
@@ -50,7 +63,7 @@ textarea {
     padding: 1.5rem;
     border-radius: 0.5rem;
     background: transparent;
-    border: 2px solid var(--color-primary-variant);
+    border: 1px solid var(--color-green);
     resize: none;
     color: var(--color-white);
 }
