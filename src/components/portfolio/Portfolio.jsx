@@ -3,52 +3,31 @@ import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
 import IMG2 from '../../assets/portfolio2.jpg'
 import IMG3 from '../../assets/portfolio3.jpg'
-import IMG4 from '../../assets/portfolio4.jpg'
-import IMG5 from '../../assets/portfolio5.png'
-import IMG6 from '../../assets/portfolio6.jpg'
 
 const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'Project 1',
-    github: 'https//github.com',
-    demo: 'https://www.google.com/'
+    title: 'My Portfolio Site',
+    github: 'https://github.com/nikos-koukis/Portfolio',
+    demo: 'https://www.google.com/',
+    online: true
   },
   {
     id: 2,
     image: IMG2,
-    title: 'Project 2',
-    github: 'https//github.com',
-    demo: 'https://www.google.com/'
+    title: 'Pet Grooming Services',
+    github: 'https://github.com/nikos-koukis/Online-Pet-Grooming-Service',
+    demo: 'https://www.google.com/',
+    online: false
   },
   {
     id: 3,
     image: IMG3,
-    title: 'Project 3',
-    github: 'https//github.com',
-    demo: 'https://www.google.com/'
-  },
-  {
-    id: 4,
-    image: IMG4,
-    title: 'Project 4',
-    github: 'https//github.com',
-    demo: 'https://www.google.com/'
-  },
-  {
-    id: 5,
-    image: IMG5,
-    title: 'Project 5',
-    github: 'https//github.com',
-    demo: 'https://www.google.com/'
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: 'Project 6',
-    github: 'https//github.com',
-    demo: 'https://www.google.com/'
+    title: 'Mobile App - Coffee Nest',
+    github: 'https://github.com/nikos-koukis/Coffee-Nest-Android-Studio',
+    demo: 'https://www.google.com/',
+    online: false
   }
 ]
 
@@ -59,7 +38,7 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
         {
-          data.map(({ id, image, title, github, demo }) => {
+          data.map(({ id, image, title, github, demo, online }) => {
             return (
               <article key={id} className="portfolio__item">
                 <div className="portfolio__item-image">
@@ -68,7 +47,7 @@ const Portfolio = () => {
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">
                   <a href={github} className='btn' target="_blank" rel="noopener noreferrer">Github</a>
-                  <a href={demo} className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
+                  {online ? <a href={demo} className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a> : ``}
                 </div>
               </article>
             )
