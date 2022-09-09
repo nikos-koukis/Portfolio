@@ -63,6 +63,17 @@
 
 /* ============== MEDIA QUERIES (MEDIUM DEVICES) =============*/
 
+@media screen and (max-width: 1350px) {
+
+    .experience__container{
+        display: flex;
+        justify-content: center;
+    }
+    .experience__container-liveText {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .experience__cards {
         place-items: center;

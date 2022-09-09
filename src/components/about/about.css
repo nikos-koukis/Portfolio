@@ -107,6 +107,7 @@
     .about__me {
         width: 65%;
         margin: 0 auto 3rem;
+        background: none;
     }
 
     .about__cards {
@@ -120,6 +121,13 @@
 
     .about__content p {
         margin: 1.5rem 0;
+    }
+
+    .about__me-image {
+        overflow: unset;
+        transform: none;
+        transition: none;
+        padding: 20px;
     }
 
 }
