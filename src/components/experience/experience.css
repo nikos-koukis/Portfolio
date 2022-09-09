@@ -39,7 +39,7 @@
 .experience__container-liveText {
     letter-spacing: 5px;
     color: var(--color-green);
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-family: var(--font-mono);
 }
 
