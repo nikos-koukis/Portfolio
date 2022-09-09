@@ -24,6 +24,7 @@ const Contact = () => {
             <a href={process.env.REACT_APP_MESSENGER} target='_blank' rel="noopener noreferrer">Send a message</a>
           </article>
         </div>
+<<<<<<< HEAD
         {/* <form name="contact" method='POST' netlify >
           <input type="hidden" name="form-name" value="contact" />
           <input type="text" name="name" placeholder="Your Full Name" required />
@@ -50,6 +51,13 @@ const Contact = () => {
           <p>
             <button type="submit">Send</button>
           </p>
+=======
+        <form action="">
+          <input type="text" name="name" placeholder="Your Full Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="textarea" rows="7" placeholder="Your Message" required></textarea>
+          <button type="submit" className='btn btn-primary'>Send Message</button>
+>>>>>>> parent of 90cf832 (Add Contact Form)
         </form>
       </div>
     </section>

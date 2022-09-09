@@ -84,8 +84,4 @@ textarea {
         width: var(--container-width-ms);
     }
 
-    #contactBtn {
-        width: 100%;
-    }
-
 }
