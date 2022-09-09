@@ -25,6 +25,7 @@ const Contact = () => {
           </article>
         </div>
         <form name="contact" method='POST' netlify >
+          <input type="hidden" name="form-name" value="contact" />
           <input type="text" name="name" placeholder="Your Full Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
