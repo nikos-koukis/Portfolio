@@ -15,7 +15,7 @@ const Header = () => {
   const zeroFill = n => {
     return ('0' + n).slice(-2);
   }
-  const interval = setInterval(() => {
+  setInterval(() => {
     const now = new Date();
     const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 

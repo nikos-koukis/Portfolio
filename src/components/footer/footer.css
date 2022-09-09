@@ -13,12 +13,12 @@ footer {
     margin: 0 auto 3rem;
 }
 
-.permalinks a{
+.permalinks a {
     color: var(--color-white);
     font-family: var(--font-mono);
 }
 
-.permalinks a:hover{
+.permalinks a:hover {
     color: var(--color-green);
 }
 
@@ -48,9 +48,10 @@ footer {
     color: var(--color-green);
 }
 
-.footer__copyright-heart{
+.footer__copyright-heart {
     color: red;
 }
+
 /* ============== MEDIA QUERIES (SMALL DEVICES) =============*/
 
 @media screen and (max-width: 600px) {

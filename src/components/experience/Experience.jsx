@@ -1,7 +1,6 @@
 import React from 'react'
 import './experience.css'
 import Typewriter from 'typewriter-effect';
-import { useState } from 'react'
 
 const jobs = [
   {

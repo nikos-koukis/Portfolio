@@ -15,14 +15,14 @@
     gap: 2rem;
 }
 
-.skills__container > div {
+.skills__container>div {
     background: transparent;
     padding: 2.4rem 5rem;
     border-radius: 2rem;
     border: 1px solid var(--color-green);
 }
 
-.skills__container > div:hover {
+.skills__container>div:hover {
     background: var(--color-green-transparency);
     border-color: var(--color-green);
     cursor: default;
@@ -36,13 +36,13 @@
     row-gap: 2rem;
 }
 
-.skills__details{
+.skills__details {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.skills__details-info{
+.skills__details-info {
     display: flex;
     gap: 10px;
 }
@@ -59,7 +59,7 @@
         grid-template-columns: 1fr;
     }
 
-    .skills__container > div {
+    .skills__container>div {
         width: 80%;
         padding: 2rem;
         margin: 0 auto;
@@ -77,7 +77,7 @@
         gap: 1rem;
     }
 
-    .skills__container > div {
+    .skills__container>div {
         width: 100%;
         padding: 2rem 1rem;
     }
