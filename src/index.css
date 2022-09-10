@@ -19,6 +19,7 @@
     /* Firefox */
     -ms-user-select: none;
     /* Internet Explorer/Edge */
+    
 }
 
 :root {
@@ -42,8 +43,10 @@
     --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
 }
 
-html {
+html,body {
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling : touch !important;
+    height: 100% !important;
 }
 
 ::-webkit-scrollbar {
