@@ -9,17 +9,11 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    user-select: none;
-    /* supported by Chrome and Opera */
+    /* user-select: none;
     -webkit-user-select: none;
-    /* Safari */
     -khtml-user-select: none;
-    /* Konqueror HTML */
     -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */
-    
+    -ms-user-select: none; */
 }
 
 :root {
@@ -43,10 +37,8 @@
     --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
 }
 
-html,body {
+html {
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling : touch !important;
-    height: 100% !important;
 }
 
 ::-webkit-scrollbar {
