@@ -17,7 +17,7 @@ const data = [
     id: 2,
     image: IMG2,
     title: 'Pet Grooming Services',
-    github: 'https://github.com/nikos-koukis/Online-Pet-Grooming-Service',
+    github: 'https://github.com/nikos-koukis/Pet-Grooming-Service',
     demo: 'https://www.google.com/',
     online: false
   },
