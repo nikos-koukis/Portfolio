@@ -24,7 +24,7 @@ const Contact = () => {
             <a href={process.env.REACT_APP_MESSENGER} target='_blank' rel="noopener noreferrer">Send a message</a>
           </article>
         </div>
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST">
           <input type="hidden" name="form-name" value="contact" />
           <input type="text" name="Name" placeholder="Your Full Name" required />
           <input type="email" name="Email" placeholder="Your Email" required />
