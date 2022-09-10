@@ -24,40 +24,12 @@ const Contact = () => {
             <a href={process.env.REACT_APP_MESSENGER} target='_blank' rel="noopener noreferrer">Send a message</a>
           </article>
         </div>
-<<<<<<< HEAD
-        {/* <form name="contact" method='POST' netlify >
+        <form name="contact" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contact" />
           <input type="text" name="name" placeholder="Your Full Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
           <button type="submit" className='btn btn-primary' id='contactBtn'>Send Message</button>
-        </form> */}
-        <form name="contact" method="POST" data-netlify="true">
-          <p>
-            <label>Your Name: <input type="text" name="name" /></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email" /></label>
-          </p>
-          <p>
-            <label>Your Role: <select name="role[]" multiple>
-              <option value="leader">Leader</option>
-              <option value="follower">Follower</option>
-            </select></label>
-          </p>
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-=======
-        <form action="">
-          <input type="text" name="name" placeholder="Your Full Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="textarea" rows="7" placeholder="Your Message" required></textarea>
-          <button type="submit" className='btn btn-primary'>Send Message</button>
->>>>>>> parent of 90cf832 (Add Contact Form)
         </form>
       </div>
     </section>
