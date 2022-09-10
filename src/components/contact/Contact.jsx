@@ -26,6 +26,7 @@ const Contact = () => {
         </div>
         <form name="contact" method="POST">
           <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="contact" />
           <input type="text" name="Name" placeholder="Your Full Name" required />
           <input type="email" name="Email" placeholder="Your Email" required />
           <textarea name="Message" rows="7" placeholder="Your Message" required></textarea>
