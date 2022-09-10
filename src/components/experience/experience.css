@@ -64,11 +64,6 @@
 /* ============== MEDIA QUERIES (MEDIUM DEVICES) =============*/
 
 @media screen and (max-width: 1024px) {
-    .experience__cards {
-        place-items: center;
-        gap: 40px;
-        text-align: center;
-    }
 
     .experience__card .experience__card-title {
         font-size: 1.5rem;
@@ -77,7 +72,16 @@
 
 /* ============== MEDIA QUERIES (SMALL DEVICES) =============*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 998px) {
+
+    .experience__container-liveText {
+        display: none;
+    }
+
+    .experience__container {
+        justify-content: center;
+    }
+
     .experience__cards {
         place-items: center;
         gap: 40px;

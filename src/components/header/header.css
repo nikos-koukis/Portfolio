@@ -150,13 +150,22 @@ header {
 
 /* ============== MEDIA QUERIES (SMALL DEVICES) =============*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 998px) {
     header {
         height: 100vh;
+    }
+
+    .header__datetime{
+        left: 50;
+        transform: translateX(-10%);
     }
 
     .header__socials,
     .scroll__down {
         display: none;
+    }
+
+    .read_more_text{
+        font-size: 13px;
     }
 }
