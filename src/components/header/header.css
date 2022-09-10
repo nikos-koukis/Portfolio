@@ -134,8 +134,7 @@ header {
 
 @media screen and (max-width: 998px) {
     header {
-        height: 100vh;
-        padding-top: 5rem;
+        padding-top: 7rem;
     }
 
     .header__datetime{
