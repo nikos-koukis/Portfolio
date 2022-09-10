@@ -4,6 +4,7 @@ import ME from '../../assets/me-about.jpg'
 import { FaAward } from 'react-icons/fa'
 import { FiUsers } from 'react-icons/fi'
 import { VscFolderLibrary } from 'react-icons/vsc'
+import { BsCode } from 'react-icons/bs'
 
 const About = () => {
   return (
@@ -34,14 +35,13 @@ const About = () => {
             <article className='about__card'>
               <VscFolderLibrary className='about__icon' />
               <h5>Projects</h5>
-              <small>80+ completed</small>
+              <small>Daily practice</small>
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et mauris a velit rhoncus tincidunt sit amet ac mi.
-            Etiam at urna non est pharetra aliquet. Ut pharetra lectus velit, a efficitur nisl auctor elementum.
-            Proin scelerisque ornare aliquet. Maecenas ut nisi eu nibh elementum hendrerit. Mauris nec enim sed augue facilisis maximus ut vitae nulla.
-            Pellentesque eu rutrum felis, quis efficitur odio. Nunc pharetra euismod consectetur.
+            Enthusiastic about coding. Daily, I try to be in sync with the latest tech-stack to improve both professionally and personally.
+            Graduate student in the Department of Electrical and Computer Engineering (former Department of Computer Engineering) with
+            fulfilled military obligations (2020).
           </p>
           <a href="#contact" className='btn'>Let's Talk</a>
         </div>

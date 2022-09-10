@@ -10,7 +10,7 @@ const data = [
     image: IMG1,
     title: 'My Portfolio Site',
     github: 'https://github.com/nikos-koukis/Portfolio',
-    demo: 'https://www.google.com/',
+    demo: 'https://nickoukis.netlify.app/',
     online: true
   },
   {
