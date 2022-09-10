@@ -24,7 +24,7 @@ const Contact = () => {
             <a href={process.env.REACT_APP_MESSENGER} target='_blank' rel="noopener noreferrer">Send a message</a>
           </article>
         </div>
-        <form name="contact" method="post">
+        <form name="contact" method="post" id="jsxForm">
         <input type="hidden" name="form-name" value="contact" />
           <input type="text" name="name" placeholder="Your Full Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
