@@ -32,13 +32,13 @@ const frontendSkills = [
     id: 5,
     title: 'React',
     icon: <BsPatchCheckFill className="skills__details-icon" />,
-    rating: <Rating value={2} sx={{ '& .MuiRating-icon': { color: 'yellow' } }} readOnly />
+    rating: <Rating value={3} sx={{ '& .MuiRating-icon': { color: 'yellow' } }} readOnly />
   },
   {
     id: 6,
     title: 'Node js',
     icon: <BsPatchCheckFill className="skills__details-icon" />,
-    rating: <Rating value={2} sx={{ '& .MuiRating-icon': { color: 'yellow' } }} readOnly />
+    rating: <Rating value={3} sx={{ '& .MuiRating-icon': { color: 'yellow' } }} readOnly />
   }
 ];
 
@@ -47,7 +47,7 @@ const frameworkSkills = [
     id: 1,
     title: 'Next.js',
     icon: <BsPatchCheckFill className="skills__details-icon" />,
-    rating: <Rating value={2} sx={{ '& .MuiRating-icon': { color: 'yellow' } }} readOnly />
+    rating: <Rating value={3} sx={{ '& .MuiRating-icon': { color: 'yellow' } }} readOnly />
   },
   {
     id: 2,

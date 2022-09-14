@@ -3,6 +3,7 @@ import './portfolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
 import IMG2 from '../../assets/portfolio2.jpg'
 import IMG3 from '../../assets/portfolio3.jpg'
+import eforoImg from '../../assets/eforo.jpg'
 
 const data = [
   {
@@ -11,7 +12,8 @@ const data = [
     title: 'My Portfolio Site',
     github: 'https://github.com/nikos-koukis/Portfolio',
     demo: 'https://nickoukis.netlify.app/',
-    online: true
+    online: true,
+    githubOnline: true
   },
   {
     id: 2,
@@ -19,7 +21,8 @@ const data = [
     title: 'Pet Grooming Services',
     github: 'https://github.com/nikos-koukis/Pet-Grooming-Service',
     demo: 'https://www.google.com/',
-    online: false
+    online: false,
+    githubOnline: true
   },
   {
     id: 3,
@@ -27,7 +30,17 @@ const data = [
     title: 'Mobile App - Coffee Nest',
     github: 'https://github.com/nikos-koukis/Coffee-Nest-Android-Studio',
     demo: 'https://www.google.com/',
-    online: false
+    online: false,
+    githubOnline: true
+  },
+  {
+    id: 4,
+    image: eforoImg,
+    title: 'Landing Page - WordPress',
+    github: '#',
+    demo: 'https://eforooil.com/',
+    online: true,
+    githubOnline: false
   }
 ]
 
@@ -38,7 +51,7 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
         {
-          data.map(({ id, image, title, github, demo, online }) => {
+          data.map(({ id, image, title, github, demo, online, githubOnline }) => {
             return (
               <article key={id} className="portfolio__item">
                 <div className="portfolio__item-image">
@@ -46,7 +59,7 @@ const Portfolio = () => {
                 </div>
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">
-                  <a href={github} className='btn' target="_blank" rel="noopener noreferrer">Github</a>
+                  {githubOnline ? <a href={github} className='btn' target="_blank" rel="noopener noreferrer">Github</a> : ``}
                   {online ? <a href={demo} className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a> : ``}
                 </div>
               </article>
