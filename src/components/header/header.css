@@ -134,7 +134,6 @@ header {
 
 @media screen and (max-width: 998px) {
     header {
-        height: 100vh;
         padding-top: 8rem;
     }
 
