@@ -1,13 +1,24 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
+import IMG1 from '../../assets/portfolioIMG.png'
+import hootIMG from '../../assets/hootIMG.png'
+import IMG2 from '../../assets/portfolioIMG.png'
 import IMG3 from '../../assets/portfolio3.jpg'
 import eforoImg from '../../assets/eforo.jpg'
+import petgrooming from '../../assets/petgrooming3.jpg'
 
 const data = [
   {
     id: 1,
+    image: hootIMG,
+    title: 'Hoot Network - Social Media App - WEB3',
+    github: '#',
+    demo: 'https://www.hoot.network/',
+    online: true,
+    githubOnline: false
+  },
+  {
+    id: 2,
     image: IMG1,
     title: 'My Portfolio Site',
     github: 'https://github.com/nikos-koukis/Portfolio',
@@ -16,8 +27,8 @@ const data = [
     githubOnline: true
   },
   {
-    id: 2,
-    image: IMG2,
+    id: 3,
+    image: petgrooming,
     title: 'Pet Grooming Services',
     github: 'https://github.com/nikos-koukis/Pet-Grooming-Service',
     demo: 'https://www.google.com/',
@@ -25,7 +36,7 @@ const data = [
     githubOnline: true
   },
   {
-    id: 3,
+    id: 4,
     image: IMG3,
     title: 'Mobile App - Coffee Nest',
     github: 'https://github.com/nikos-koukis/Coffee-Nest-Android-Studio',
@@ -34,7 +45,7 @@ const data = [
     githubOnline: true
   },
   {
-    id: 4,
+    id: 5,
     image: eforoImg,
     title: 'Landing Page - WordPress',
     github: '#',

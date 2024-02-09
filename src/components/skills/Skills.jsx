@@ -38,25 +38,31 @@ const frontendSkills = [
     id: 6,
     title: 'Node js',
     icon: <BsPatchCheckFill className="skills__details-icon" />,
-    rating: <Rating value={3} sx={{ '& .MuiRating-icon': { color: 'yellow' } }} readOnly />
+    rating: <Rating value={4} sx={{ '& .MuiRating-icon': { color: 'yellow' } }} readOnly />
   }
 ];
 
 const frameworkSkills = [
   {
     id: 1,
+    title: 'CodeIgniter',
+    icon: <BsPatchCheckFill className="skills__details-icon" />,
+    rating: <Rating value={4} sx={{ '& .MuiRating-icon': { color: 'yellow' } }} readOnly />
+  },
+  {
+    id: 2,
     title: 'Next.js',
     icon: <BsPatchCheckFill className="skills__details-icon" />,
     rating: <Rating value={3} sx={{ '& .MuiRating-icon': { color: 'yellow' } }} readOnly />
   },
   {
-    id: 2,
+    id: 3,
     title: 'Express',
     icon: <BsPatchCheckFill className="skills__details-icon" />,
     rating: <Rating value={2} sx={{ '& .MuiRating-icon': { color: 'yellow' } }} readOnly />
   },
   {
-    id: 3,
+    id: 4,
     title: 'Tailwind CSS',
     icon: <BsPatchCheckFill className="skills__details-icon" />,
     rating: <Rating value={2} sx={{ '& .MuiRating-icon': { color: 'yellow' } }} readOnly />
@@ -222,7 +228,7 @@ const Skills = () => {
             }
           </div>
         </div>
-        <div className="skills__tools">
+        {/* <div className="skills__tools">
           <h3>Tools</h3>
           <div className="skills__content">
             {
@@ -241,7 +247,7 @@ const Skills = () => {
               })
             }
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   )
